@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    scroll-behavior: smooth !important;
+    transition: 0.2s all !important;
+    scrollbar-width: none !important;
+    color: white !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    background-image: url("../img/background.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.brand {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.brand img{
+    width: 5em;
+}
+
+main div.brand div.title{
+    display: flex;
+    align-items: end;
+}
+
+main div.brand div.title h1{
+    font-size: 4em;
+}
+
+main div.brand div.title span{
+    font-size: 2em;
+    margin-bottom: 3%;
+    color: #3798ff !important;
+}
+
+main div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1cm;
+    background-color: #161829;
+    border-radius: 20px;
+    padding: 20px;
+    width: 12cm;
+}
+
+main div.container div.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1cm;
+}
+
+main div.container div.title h2{
+    font-size: 2em;
+}
+
+main div.container div.title p{
+    color: rgba(255,255,255,0.5) !important;
+}
+
+main div.container div.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15cm;
+}
+
+main div.container div.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10cm;
+}
+
+main div.container div.form form label.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+main div.container div.form form label.input span{
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.5) !important;
+}
+
+main div.container div.form form label.input input{
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0);
+    border: 2px #3798ff solid ;
+    border-radius: 10px;
+    outline: none;
+}
+
+main div.container div.form form label.input input::placeholder{
+    color: rgba(255,255,255,0.5) !important;
+}
+
+main div.container div.form form div.captcha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(53, 50, 50, 0.479);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Hide the default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkbox-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    background-color: #cccccc00;
+    border-radius: 10px;
+    border: rgba(255,255,255,0.6) 2px solid;
+    background-color: rgba(255,255,255,0.4);
+    transition: .4s;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkmark {
+    box-shadow: none;
+    background-color: limegreen;
+    transform: rotateX(360deg);
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:hover {
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+    left: 0.96em;
+    top: 0.7em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    box-shadow: 0.1em 0.1em 0em 0 rgba(0,0,0,0.3);
+    transform: rotate(45deg);
+  }
+
+main div.container div.form form div.captcha p{
+    margin-left: 10px;
+}
+
+main div.container div.form form button{
+    width: 100%;
+    background-color: #3798ff;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    border-top: #72b6ff 5px solid;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+main div.container div.form p.dont-have-account{
+    margin-bottom: 30px;
+}
+
+main div.container div.form p.dont-have-account a{
+    text-decoration: underline;
+}
+
+main div.container div.form a.recover{
+    text-decoration: underline;
+}
+
+main footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 1cm;
+}
